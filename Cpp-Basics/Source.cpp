@@ -6,6 +6,7 @@ int main()
 	std::cout << "For test only";
 	std::cout << "after 3rd change on gitHub for test";
 	std::cout << "after 4th change on gitHub for test";
+	std::cout << "after 5th change on gitHub for test";
 }
 
 // one more test on gitHub
