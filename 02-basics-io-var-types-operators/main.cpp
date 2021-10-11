@@ -4,41 +4,44 @@
 
 int main()
 {
-	std::cout << "Basics Cpp" << '\n';
+	using namespace std;
 
-	/* 2. variables */
-	std::string name;
-	short age;
-	std::string address;
+	cout << "Basics Cpp" << '\n';
 
-	/* 1. output */
-	std::cout << "Hello, my name is John" << std::endl;
-	std::cout << "I am 18 years old" << '\n';
-	std::cout << "I am from Da Nang" << std::endl;
+	/* 4. input many variables */
 
-	/* 3. input */
-	std::cout << "Enter your name: ";
-	//std::cin >> name;
-	std::getline(std::cin, name);
+	string str1, str2, str3;
 
-	std::cout << "Enter your age: ";
-	std::cin >> age;
-	
-	/* add following to ignore newline character when reading string */
-	/* 2 ways */
-	//std::string ignoreNewLine;
-	//std::getline(std::cin, ignoreStr);
+	int n1, n2, n3;
 
-	//std::cin.ignore(1000, '\n');
+	//cout << "Enter 3 strings variables: ";
+	//cin >> str1 >> str2 >> str3;
+	//cout << str1 << '\n';
+	//cout << str2 << '\n';
+	//cout << str3 << '\n';
 
+	//cout << "Enter 3 numbers: ";
+	//cin >> n1 >> n2 >> n3;
+	//cout << n1 << '\n';
+	//cout << n2 << '\n';
+	//cout << n3 << '\n';
 
-	std::cout << "Enter your address: ";
-	//std::cin >> address;
-	std::getline(std::cin, address);
+	cout << "Enter 1st number: ";
+	cin >> n1;
+	cin.ignore(1000, '\n');
 
-	std::cout << "Hello, my name is " << name << std::endl;
-	std::cout << "I am " << age << " years old" << '\n';
-	std::cout << "I am from " << address << std::endl;
+	cout << "Enter 1st string: ";
+	//cin >> str1;
+	getline(cin, str1);
 
+	cout << "Number 1: " << n1 << '\n' << "String 1: " << str1 << '\n';
+
+	cout << "Enter 2nd number: ";
+	cin >> n2;
+
+	cout << "Enter 2nd string: ";
+	cin >> str2;
+
+	cout << n2 << '\n' << str2 << '\n';
 
 }
